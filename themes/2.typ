@@ -1,6 +1,5 @@
 #import "../conf.typ": *
 
-#let sign = $op("sign")$
 
 = О чебышевских пространствах
 

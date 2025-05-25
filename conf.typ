@@ -5,6 +5,8 @@
 #import "@preview/polytonoi:0.1.0": *
 #import "@preview/ouset:0.2.0": *
 
+#let sign = $op("sign")$
+
 #let gk = ptgk
 
 #let seq(idx: "n", start: "1", end: $oo$, name) = ${name_idx}_(idx = start)^end$
