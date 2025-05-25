@@ -12,3 +12,5 @@
     *#title*
   ],
 )
+
+#include "themes/1.typ"
