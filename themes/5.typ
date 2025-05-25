@@ -57,6 +57,17 @@
   ]
 ] <reverse_formula>
 
+#proof[
+  Достаточно доказать для $r = 1$. имеем
+  #eq[
+    $1 / (2 pi) integral_0^(2 pi) f(tau) dif tau + 1 / pi integral_0^(2 pi) B_1 (t - tau) f' (tau) dif tau = \
+    1 / (2 pi) integral_0^(2 pi) f(tau) dif tau + 1 / pi integral_0^t B_1 (t - tau) f' (tau) dif tau + 1 / pi integral_t^(2 pi) B_1 (t - tau + 2 pi) f' (tau) dif tau = \
+    1 / (2pi) integral_0^(2pi) f(tau) dif tau + 1 / pi integral_0^t (pi - t + tau) / 2 f'(tau) dif tau + 1 / pi integral_t^(2pi) (tau - t - pi) / 2 f' (tau) dif tau = \
+    1 / (2 pi) integral_0^(2 pi )f (tau) dif tau + 1 / pi integral_0^(2 pi) (tau -t )/2 f'(tau) dif tau + 1/2 integral_0^t f'(tau) dif tau - 1 / 2 integral_t^(2 pi) f'(tau) dif tau =\
+    1 / (2 pi) integral_0^(2 pi) f(tau) dif tau + 1 / (2pi) integral_0^(2pi) tau f'(tau) dif tau + f(t) underset(=, "По частям") f(t)$
+  ]
+]
+
 #lemma(title: "О нулях тригонометрической интерполяции")[
   Разность $Delta (t) = Delta_(n, r) (t) = B_r (t) - T_(n, r) (t)$ обращается в нуль на интервале $(0, pi)$ при $n >= 1$ и чётном $r$ только в точках $t_j$, а в нечётном $r$ только в точках $tau_k$.
 
